@@ -1340,7 +1340,7 @@ MonoBehaviour:
   firePoint: {fileID: 1404975651}
   bullet: {fileID: 1970381439053018, guid: 5f12bfa925e499242a0835d487fe55fe, type: 2}
   animator: {fileID: 859517271}
-  fireRate: 3
+  fireRate: 1.5
 --- !u!114 &859517268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2659,6 +2659,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114204714259356600, guid: c9f0cf094374e4a47bb1bf15f194c01b,
+        type: 2}
+      propertyPath: dieMenuUI
+      value: 
+      objectReference: {fileID: 326763285}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9f0cf094374e4a47bb1bf15f194c01b, type: 2}
   m_IsPrefabParent: 0
