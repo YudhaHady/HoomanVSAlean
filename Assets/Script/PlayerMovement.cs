@@ -22,7 +22,9 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetButtonDown("Jump"))
 		{
 			jump = true;
+			shoot = false;
 			animator.SetBool("Jumping", true); 
+			this.GetComponent<Weapon>().enabled = false;
 		}
 
 		if (Input.GetButtonDown("Fire1"))
@@ -42,6 +44,7 @@ public class PlayerMovement : MonoBehaviour {
 	public void OnLanding()
 	{
 		animator.SetBool("Jumping", false);
+		this.GetComponent<Weapon>().enabled = true;
 	}
 
 	public void OnShoot (bool Shoot)
