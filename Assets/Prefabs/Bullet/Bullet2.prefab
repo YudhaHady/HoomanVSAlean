@@ -36,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1970381439053018}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.384, y: -0.99, z: 0.11917758}
-  m_LocalScale: {x: 0.33818576, y: 0.3037908, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 1.3803, y: -0.9599, z: 0.11917758}
+  m_LocalScale: {x: 1.2800499, y: 1.2417189, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!50 &50148574784650668
 Rigidbody2D:
   serializedVersion: 4
@@ -75,9 +75,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0007914884, y: 0.001115752}
   serializedVersion: 2
-  m_Radius: 0.96
+  m_Radius: 0.05064669
 --- !u!114 &114330007215328352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
   moveSpeed: 7
   damage: 10
   rb: {fileID: 50148574784650668}
-  impactEffect: {fileID: 1451305610843518, guid: a17d233756233e145a75474c4c7bc258,
+  impactEffect: {fileID: 1063203444947720, guid: 5ce0464bf8135284290461c2e12e0c18,
     type: 2}
 --- !u!212 &212892630412940592
 SpriteRenderer:
@@ -127,8 +127,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 31a8508547492a446981a4753358d2a3, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300080, guid: a63c03a4b98dc364e914987f5f645add, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

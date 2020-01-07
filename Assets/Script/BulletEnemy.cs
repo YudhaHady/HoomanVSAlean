@@ -29,6 +29,7 @@ public class BulletEnemy : MonoBehaviour {
 		if (Player != null)
 		{
 			Player.TakeDamage(damage);
+			HealthBarPlayer.health -= 10f;
 
 		}
 			Instantiate(impactEffect, transform.position, transform.rotation);

@@ -30,10 +30,4 @@ public class BGSoundScript : MonoBehaviour {
 
         DontDestroyOnLoad(this.gameObject);
     }
-    //Play Gobal End
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 }

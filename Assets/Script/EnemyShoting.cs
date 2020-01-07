@@ -9,11 +9,11 @@ public class EnemyShoting : MonoBehaviour {
 	public GameObject bullet;
 	public Animator animator;
 	public float fireRate = 5f;
+	public float shooting = 0f;
 	float nextFire;
 	float waitTime;
 	// Use this for initialization
 	void Start () {
-		//fireRate = 5f;
 		nextFire = Time.time;
 		
 	}
@@ -21,13 +21,17 @@ public class EnemyShoting : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		CheckIfTimeToFire ();
+		//yield return new WaitForSeconds(4);
 	}
 
 	void CheckIfTimeToFire()
 	{
-		if (Time.time > nextFire) {
-			Instantiate(bullet, firePoint.position, firePoint.rotation);
-			nextFire = Time.time + fireRate;
+		if (Time.time > nextFire) 
+			{
+				animator.SetFloat("counter", Mathf.Abs(shooting));
+				//animator.SetBool("Attack", true);  
+				Instantiate(bullet, firePoint.position, firePoint.rotation);
+				nextFire = Time.time + fireRate;
 			}
 		
 	}

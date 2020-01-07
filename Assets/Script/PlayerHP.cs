@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour {
 
-	public int health = 10;
+	public int health;
 	public Animator animator;
 	public GameObject dieMenuUI;
 
+	void Start()
+	{
+		//rb = GetComponent<Rigidbody>();
+	}
 	// Use this for initialization
 	
 	public void TakeDamage (int damage)
@@ -30,6 +34,7 @@ public class PlayerHP : MonoBehaviour {
 			Destroy(gameObject, 1.6f);
 			Invoke("Pause", 1.4f);
 			this.GetComponent<PlayerMovement>().enabled = false;
+			
 	}
 
 	void Pause()

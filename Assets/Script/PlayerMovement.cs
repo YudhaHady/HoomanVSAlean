@@ -9,10 +9,17 @@ public class PlayerMovement : MonoBehaviour {
 	public Animator animator;
 	public float runSpeed = 40f;
 
+	private bool disableSpace = false;
+
+
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool shoot = false;
 
+	void Start()
+	{
+     
+	}
 	// Update is called once per frame
 	void Update () {
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
@@ -21,10 +28,12 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (Input.GetButtonDown("Jump"))
 		{
+			
 			jump = true;
 			shoot = false;
 			animator.SetBool("Jumping", true); 
 			this.GetComponent<Weapon>().enabled = false;
+			
 		}
 
 		if (Input.GetButtonDown("Fire1"))
