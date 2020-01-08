@@ -10,13 +10,13 @@ public class BulletEnemy : MonoBehaviour {
 	public Rigidbody2D rb;
 	public GameObject impactEffect;
 
-	PlayerMovement target;
+	Target target;
 	Vector2 moveDirection;
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
-		target = GameObject.FindObjectOfType<PlayerMovement>();
+		target = GameObject.FindObjectOfType<Target>();
 		moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
 		rb.velocity = new Vector2 (moveDirection.x, moveDirection.y);
 		Destroy (gameObject, 5f);
