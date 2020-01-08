@@ -8,7 +8,7 @@ public class GUImanager : MonoBehaviour {
 	public void OnPlay()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level");
+		SceneManager.LoadScene("Scenes/Level");
 	}
 
 	public void OnOption()
@@ -24,37 +24,37 @@ public class GUImanager : MonoBehaviour {
 
 	public void OnBack()
 	{
-		SceneManager.LoadScene("Main");
+		SceneManager.LoadScene("Scenes/Main");
 	}
 
 	public void OnLevel1()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level1");
+		SceneManager.LoadScene("Scenes/Level1");
 	}
 
 	public void OnLevel2()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level2");
+		SceneManager.LoadScene("Scenes/Level2");
 	} 
 
 	public void OnLevel3()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level3");
+		SceneManager.LoadScene("Scenes/Level3");
 	} 
 
 	public void OnLevel4()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level4");
+		SceneManager.LoadScene("Scenes/Level4");
 	} 
 
 	public void OnLevel5()
 	{
 		Time.timeScale = 1f;
-		SceneManager.LoadScene("Level5");
+		SceneManager.LoadScene("Scenes/Level5");
 	} 
 
 	// Use this for initialization

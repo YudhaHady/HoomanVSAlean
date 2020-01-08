@@ -372,6 +372,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114204714259356600, guid: c9f0cf094374e4a47bb1bf15f194c01b,
+        type: 2}
+      propertyPath: dieMenuUI
+      value: 
+      objectReference: {fileID: 880601983}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9f0cf094374e4a47bb1bf15f194c01b, type: 2}
   m_IsPrefabParent: 0
@@ -2593,6 +2598,7 @@ MonoBehaviour:
   bullet: {fileID: 1970381439053018, guid: 5f12bfa925e499242a0835d487fe55fe, type: 2}
   animator: {fileID: 2075528439}
   fireRate: 2
+  shooting: 0
 --- !u!1 &2133416461
 GameObject:
   m_ObjectHideFlags: 0
